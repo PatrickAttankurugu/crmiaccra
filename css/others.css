@@ -1,0 +1,802 @@
+/* Style for the entire about page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #8B4513; /* Dark brown */
+    padding: 1rem 2rem; /* Padding around the navbar */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Gives navbar a slight 3D effect */
+}
+
+.navbar-brand {
+    color: #F5F5DC; /* Beige */
+    font-size: 1.5rem; /* Larger font size */
+    transition: all 0.5s; /* Smooth transition for hover effect */
+}
+
+.navbar-brand:hover {
+    color: #C0C0C0
+}
+
+.navbar-toggler {
+    border-color: #F5F5DC; /* Beige */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245, 245, 220, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Beige color for the toggler icon */
+}
+
+.navbar-nav {
+    text-align: center; /* Center the nav links on smaller screens */
+}
+
+.navbar-nav .nav-item {
+    flex-grow: 1; /* Nav items occupy equal space within the container */
+}
+
+.navbar-nav .nav-link {
+    color: #F5F5DC; /* Beige */
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: all 0.5s; /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #C0C0C0;
+    background-color: #F5F5DC; /* Beige background on hover */
+}
+
+
+/* Hero Image */
+#hero-image {
+    background: url('../images/welcome.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+#hero-image .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#hero-image .hero-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+/* Hero Image */
+#hero-image {
+    background: url('../images/welcome.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+#hero-image .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#hero-image .hero-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+
+/*HERO SECTION FOR GIVE PAGE*/
+.hero-section {
+    background-color: #333; /* Dark background color */
+    padding: 80px 0;
+    color: #ffffff;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-section .btn {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+}
+
+.hero-image {
+    background-image: url('../images/donate.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+@media screen and (max-width: 992px) {
+    .hero-section .hero-text {
+        text-align: center;
+    }
+
+    .hero-section .hero-image {
+        display: none; /* Optional: hide the image on smaller screens */
+    }
+}
+
+/*WHY GIVE*/
+.page-header {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7; /* You can adjust the background color as needed */
+    padding: 40px;
+    color: #333; /* Adjust text color as needed */
+}
+
+.page-header .image-container {
+    flex: 0 0 50%; /* Taking up 50% of the space */
+    background: url('../images/support.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px; /* Adjust height as needed */
+}
+
+.page-header .text-container {
+    flex: 1; /* Taking up the remaining space */
+    padding-left: 30px; /* Adding some space between the image and text */
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    line-height: 1.5; /* Improving readability */
+}
+
+/* Making the header responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+    }
+
+    .page-header .image-container {
+        height: 200px; /* Adjust height as needed for smaller screens */
+    }
+
+    .page-header .text-container {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+/*why give*/
+#why-give.give-section {
+    background-image: url('../images/actesy.jpg'); /* Replace with your image path */
+    background-attachment: fixed; /* Key property for parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Make sure the image covers the whole section */
+    color: #fff; /* White text color to ensure visibility against the background */
+    padding: 40px 0;
+    text-align: center;
+}
+
+#why-give h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#why-give .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allowing the content to wrap on smaller screens */
+}
+
+#why-give .col-md-4 {
+    flex: 0 0 30%; /* Taking up 30% of the space */
+    margin: 10px 1.66%; /* Adding small margins for spacing */
+    background: rgba(68, 63, 63, 0.8); /* Semi-transparent white background for individual columns */
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#why-give h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#why-give p {
+    font-size: 1.1rem;
+    line-height: 1.5; /* Improved readability */
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    #why-give .col-md-4 {
+        flex: 0 0 100%; /* Taking up full width on small screens */
+        margin: 10px 0; /* Adjusting margin */
+    }
+}
+
+/*HOW TO GIVE*/
+/* How to Give */
+#how-to-give {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    color: #333;
+    text-align: center;
+}
+
+#how-to-give h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#how-to-give .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#how-to-give .col-md-6 {
+    flex: 0 0 45%; /* Taking up almost half the space */
+    margin: 10px 1.66%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#how-to-give h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+#how-to-give p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#how-to-give img {
+    width: 100px; /* Adjust the size as needed */
+    margin: 10px 0;
+}
+
+#how-to-give .mtn-details p {
+    font-size: 1rem;
+    margin: 5px 0;
+    font-weight: 600; /* Slightly bold for readability */
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    #how-to-give .col-md-6 {
+        flex: 0 0 100%; /* Taking up full width on small screens */
+        margin: 10px 0;
+    }
+}
+
+
+
+
+/* KNOW US SECTION */
+#know-us {
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px; 
+    max-width: 1200px; /* Limit the width of the content to 1200px or less */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+#know-us .know-us-text,
+#know-us .know-us-connect {
+    color: #fff; /* Sets the text color to white for visibility against the dark background */
+}
+
+#know-us h2, #know-us h3, #know-us .know-us-connect h4, #know-us .know-us-connect p {
+    font-weight: 700; /* Makes the text bold */
+}
+
+/* rest of the CSS stays the same */
+ 
+
+#know-us .know-us-text {
+    width: 55%; /* Allocate more width to the text content */
+    text-align: left; 
+}
+
+#know-us h2, #know-us h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+    color: #333; 
+}
+
+#know-us p {
+    font-size: 1.2rem;
+    color: #333; 
+    margin-bottom: 20px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+#know-us .know-us-connect {
+    width: 35%; /* Allocate less width to the connection information */
+    text-align: right; 
+}
+
+#know-us .know-us-connect h4, #know-us .know-us-connect p {
+    color: #333; 
+}
+
+#know-us .tell-us-button {
+    display: inline-block;
+    color: #fff;
+    background-color: #8B4513;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px; /* Space above the button */
+}
+
+#know-us .tell-us-button:hover {
+    background-color: #5A3510;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+#know-us .know-us-connect #tell-us-button {
+    background-color: #8B4513;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#know-us .know-us-connect #tell-us-button:hover {
+    background-color: white; 
+    color: #8B4513;
+    border: 2px solid #8B4513;
+}
+
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    #know-us {
+        flex-direction: column;
+    }
+
+    #know-us .know-us-text, #know-us .know-us-connect {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    #know-us .know-us-connect {
+        margin-top: 20px;
+    }
+
+    #know-us .tell-us-button {
+        display: block;
+        width: 100%;
+        margin-left: auto; /* Auto left margin for centering on small screens */
+        margin-right: auto; /* Auto right margin for centering on small screens */
+    }
+}
+
+/* Mission Section */
+#mission {
+    background: #5A3510; 
+    color: #fff; 
+    padding: 80px 0; 
+    margin:20px;
+    text-align: center; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease;
+}
+
+#mission:hover {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#mission h2 {
+    font-size: 2.5em; 
+    font-weight: 700; 
+    margin-bottom: 20px; 
+}
+
+#mission p {
+    font-size: 1.2em; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+/* Vision Section */
+#vision {
+    background: #333; 
+    color: #fff; 
+    padding: 80px 0; 
+    margin:20px;
+    text-align: center; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease;
+}
+
+#vision:hover {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#vision h2 {
+    font-size: 2.5em; 
+    font-weight: 700; 
+    margin-bottom: 20px; 
+}
+
+#vision p {
+    font-size: 1.2em; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+
+
+/* PASTOR SECTION */
+#pastor {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pastor .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#pastor .pastor-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pastor .pastor-image img {
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+#pastor .pastor-info {
+    max-width: 500px;
+    margin-left: 30px;
+}
+
+#pastor .pastor-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#pastor .pastor-info h3 {
+    font-size: 1.6rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#pastor .pastor-info p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+#pastor .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+#pastor .btn:hover {
+    background: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #pastor .pastor-content {
+        flex-direction: column;
+    }
+
+    #pastor .pastor-image, 
+    #pastor .pastor-info {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #pastor .pastor-info {
+        margin-top: 20px;
+    }
+}
+
+
+/* COME SEE US SECTION */
+#come-see-us {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/visit-us.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+}
+
+#come-see-us .welcome-text {
+    max-width: 800px;
+    text-align: center;
+    padding: 50px;
+}
+
+#come-see-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#come-see-us p {
+    font-size: 1.2rem;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+}
+
+#come-see-us #schedule-visit-button {
+    background-color: #8B4513;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#come-see-us #schedule-visit-button:hover {
+    background-color: #6a320a;
+    transform: translateY(-2px);
+}
+
+#come-see-us #schedule-visit-button:active {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    #come-see-us h2 {
+        font-size: 1.5rem;
+    }
+
+    #come-see-us p {
+        font-size: 1rem;
+    }
+
+    #come-see-us #schedule-visit-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #5A3510;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#contact-form {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5A3510;
+}
+
+#contact-form form label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contact-form form input[type="text"],
+#contact-form form input[type="email"],
+#contact-form form input[type="tel"],
+#contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#contact-form form input[type="submit"] {
+    background-color: #5A3510;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#contact-form form input[type="submit"]:hover {
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+#contact-info {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5A3510;
+}
+
+#contact-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+
+/*FOOTER SECTION*/
+
+footer {
+    background-color: #333; /* dark grey */
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer .col-md-3 h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #F5F5DC;
+    border-bottom: 1px solid #F5F5DC;
+    padding-bottom: 10px;
+}
+
+footer .col-md-3 p {
+    font-size: 0.9rem;
+    color: #f8f9fa;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+footer .col-md-3 a {
+    display: block;
+    color: #F5F5DC;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+footer .col-md-3 a:hover {
+    color: #EAE4C2;
+}
+
+footer .developed-by {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #f8f9fa;
+}
+
+footer .developed-by a {
+    color: #F5F5DC;
+    text-decoration: none;
+}
+
+footer .developed-by a:hover {
+    color: #EAE4C2;
+}
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem;
+    }
+
+    footer .col-md-3 h5 {
+        font-size: 1rem;
+    }
+
+    footer .col-md-3 p {
+        font-size: 0.8rem;
+    }
+
+    footer .developed-by {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+

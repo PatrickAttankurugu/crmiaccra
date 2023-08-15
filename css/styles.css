@@ -1,0 +1,526 @@
+/* Navigation Bar */
+.navbar {
+    background-color: #8B4513; /* Dark brown */
+    padding: 1rem 2rem; /* Padding around the navbar */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Gives navbar a slight 3D effect */
+}
+
+.navbar-brand {
+    color: #F5F5DC; /* Beige */
+    font-size: 1.5rem; /* Larger font size */
+    transition: all 0.5s; /* Smooth transition for hover effect */
+}
+
+.navbar-brand:hover {
+    color: #C0C0C0
+}
+
+.navbar-toggler {
+    border-color: #F5F5DC; /* Beige */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245, 245, 220, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Beige color for the toggler icon */
+}
+
+.navbar-nav {
+    text-align: center; /* Center the nav links on smaller screens */
+}
+
+.navbar-nav .nav-item {
+    flex-grow: 1; /* Nav items occupy equal space within the container */
+}
+
+.navbar-nav .nav-link {
+    color: #F5F5DC; /* Beige */
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: all 0.5s; /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #C0C0C0;
+    background-color: #F5F5DC; /* Beige background on hover */
+}
+
+/* Full-page Carousel */
+.carousel {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+    transition: transform 2s ease; /* Smooth transition for animation effect */
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Resizes the image to fill its box while preserving its aspect ratio */
+}
+
+/* Dark overlay for each slide */
+.carousel .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+
+.carousel-caption h2 {
+    font-size: 3.5rem; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+    font-size: 1.8rem; /* Slightly larger font size */
+    margin-bottom: 2rem;
+}
+
+.carousel-caption .btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* White color */
+    opacity: 0.8;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    opacity: 1;
+}
+
+/* General Styling */
+.container h2 {
+    color: #C0C0C0;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333; /* dark grey */
+}
+
+.container a {
+    color: #C0C0C0;
+}
+
+.container a:hover {
+    color: #C0C0C0;
+    text-decoration: none;
+}
+
+/* Welcome Message */
+#welcome-message {
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark grey text for better readability against light background */
+    font-family: Arial, sans-serif; /* Modern, clean font */
+    line-height: 1.6; /* Spacious line-height for better readability */
+    padding: 2em; /* Added padding for smaller screens */
+}
+
+#welcome-message h2 {
+    font-size: 2.5rem; /* Large heading size for impact */
+    font-weight: 700; /* Bold font weight for emphasis */
+    padding-top: 1.5rem; /* Top padding for spacing */
+    margin-bottom: 1rem; /* Bottom margin to add space between heading and paragraph */
+}
+
+#welcome-message p {
+    font-size: 1.2rem; /* Large text size for readability */
+    max-width: 800px; /* Maximum width to maintain optimal line length for readability */
+    margin: 0 auto; /* Auto margins for horizontal centering of text */
+}
+
+/* Welcome Message Button */
+#welcome-message .btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #8B4513; /* Stylish blue background */
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase; /* Transforms the text to uppercase for a more stylish look */
+    letter-spacing: 1px; /* Adds some spacing between the letters */
+    border: none;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+#welcome-message .btn:hover {
+    background-color: #A0522D; /* Slightly darker blue for hover effect */
+    color: #fff;
+    text-decoration: none; /* Removes underline from link on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #welcome-message h2 {
+        font-size: 2rem; /* Slightly smaller heading size for smaller screens */
+    }
+
+    #welcome-message p {
+        font-size: 1rem; /* Slightly smaller text size for smaller screens */
+    }
+
+    #welcome-message .btn {
+        padding: 10px 20px; /* Slightly smaller padding for smaller screens */
+        font-size: 1rem; /* Slightly smaller font size for smaller screens */
+    }
+}
+
+
+
+
+/* CTA Section */
+#cta {
+    background-color: #A9A9A9;
+    padding: 2rem 1rem; /* Padding for the section */
+}
+
+.teaching-container {
+    display: flex; /* Flex layout for the two halves */
+    flex-direction: row-reverse; /* Reverses the order of the flex items */
+    align-items: center; /* Vertically center aligns the items */
+    gap: 2rem; /* Space between the two halves */
+}
+
+/* For screens smaller than 768px, stack the items vertically */
+@media (max-width: 767px) {
+    .teaching-container {
+        flex-direction: column; /* Stacks the flex items vertically */
+    }
+}
+
+.preaching-poster {
+    flex: 1; /* Each half takes up an equal width */
+    max-width: 600px; /* Maximum width for the image */
+    margin: 0 auto; /* Auto margins for horizontal centering */
+}
+
+.preaching-poster img {
+    width: 100%; /* Image takes up full width of its container */
+    height: auto; /* Height auto to maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the entire area */
+    border-radius: 0.5rem; /* Rounded corners for the image */
+}
+
+.preaching-details {
+    flex: 1; /* Each half takes up an equal width */
+    padding: 1rem; /* Padding around the text */
+}
+
+.preaching-details h3, .preaching-details h4 {
+    margin-bottom: 0.5rem; /* Space between the headings and paragraphs */
+    color: #8B4513; /* Dark brown color for the text */
+}
+
+.preaching-details p {
+    margin-bottom: 1rem; /* Space between paragraphs */
+    color: #333; /* Dark grey color for the text */
+}
+
+/* CTA Button */
+.cta-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #8B4513; /* Dark brown background */
+    padding: 15px 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    letter-spacing: 1px; /* Adds some spacing between the letters */
+    border: none;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.cta-btn:hover {
+    background-color: #A52A2A; /* Slightly darker brown for hover effect */
+    color: #fff;
+    text-decoration: none; /* Removes underline from link on hover */
+}
+
+
+
+#upcoming-events {
+    background: url('../images/jesus.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    position: relative;
+    height: 800px;
+    padding-top: 150px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#upcoming-events:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#upcoming-events .container {
+    position: relative;
+    z-index: 2;
+}
+
+.event {
+    opacity: 0.8;
+}
+
+.event:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.event .card-body {
+    color: black;
+}
+
+
+/* Google Maps */
+#location {
+    position: relative;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#location .map {
+    width: 100%;
+    height: 450px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#location .map:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#location iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Find Your Place Section */
+#find-place {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-top: 50px; /* Added margin top */
+}
+
+#find-place .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Made the overlay darker */
+}
+
+#find-place .content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(20%); /* Shift the text down towards the middle */
+}
+
+#find-place h2 {
+    font-size: 2.5rem;
+    font-weight: 900; /* Made the heading bolder */
+    margin-bottom: 20px;
+}
+
+#find-place p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Call to Action Button */
+#find-place .cta-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #8B4513;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#find-place .cta-btn:hover {
+    background-color: #A0522D;
+    text-decoration: none;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    #find-place h2 {
+        font-size: 2rem;
+    }
+
+    #find-place p {
+        font-size: 1rem;
+    }
+
+    #find-place .cta-btn {
+        font-size: 1rem;
+    }
+
+    #find-place .content-wrapper {
+        padding: 10px;
+        transform: translateY(10%);
+    }
+}
+
+/*GET HELP SECTION */
+#get-help {
+    background-color: #D3D3D3; /* Light gray background */
+    padding: 60px 0; /* Padding at the top and bottom */
+    color: #333; /* Dark text for better readability */
+    text-align: center; /* Centers the text */
+}
+
+#get-help h2 {
+    font-size: 2.5rem; /* Large heading size */
+    font-weight: 700; /* Bold font weight for emphasis */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#get-help p {
+    font-size: 1.2rem; /* Large paragraph text size for readability */
+    max-width: 800px; /* Maximum width to maintain optimal line length */
+    margin: 0 auto 20px; /* Auto margins for horizontal centering, space below paragraph */
+    line-height: 1.6; /* Spacious line-height for better readability */
+}
+
+/* Get Help Button */
+#get-help .btn {
+    display: inline-block;
+    color: #fff; /* White text color */
+    background-color: #8B4513; /* Dark brown background */
+    padding: 15px 30px; /* Padding on the top/bottom and left/right */
+    font-size: 1.2rem; /* Large font size for readability */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    border: none; /* Removes border */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+#get-help .btn:hover {
+    background-color: #6a360c; /* Darkens background color for hover effect */
+    text-decoration: none; /* Removes underline from link on hover */
+}
+
+
+
+/*FOOTER SECTION*/
+
+footer {
+    background-color: #333; /* dark grey */
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer .col-md-3 h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #F5F5DC;
+    border-bottom: 1px solid #F5F5DC;
+    padding-bottom: 10px;
+}
+
+footer .col-md-3 p {
+    font-size: 0.9rem;
+    color: #f8f9fa;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+footer .col-md-3 a {
+    display: block;
+    color: #F5F5DC;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+footer .col-md-3 a:hover {
+    color: #EAE4C2;
+}
+
+footer .developed-by {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #f8f9fa;
+}
+
+footer .developed-by a {
+    color: #F5F5DC;
+    text-decoration: none;
+}
+
+footer .developed-by a:hover {
+    color: #EAE4C2;
+}
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem;
+    }
+
+    footer .col-md-3 h5 {
+        font-size: 1rem;
+    }
+
+    footer .col-md-3 p {
+        font-size: 0.8rem;
+    }
+
+    footer .developed-by {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
