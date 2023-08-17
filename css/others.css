@@ -298,6 +298,137 @@ body {
 }
 
 
+/*MEDIA SECTION*/
+/* Media Hero Section */
+#media-hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    color: #ffffff;
+    background: url('../images/media.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Media Overlay to darken the background image */
+#media-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the 0.6 value to control the darkening */
+    z-index: 1; /* Increase the z-index value to make sure it appears above the content */
+}
+
+/* Media Hero Content */
+#media-hero-content {
+    text-align: center;
+    z-index: 2; /* Make sure the content is on top of the overlay */
+}
+
+/* Media Hero Title */
+#media-hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Media Hero Subtitle */
+#media-hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Media Hero Button */
+.media-btn-hero {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#media-hero-button:hover {
+    background-color: #0056b3;
+}
+
+
+/*MEDIA SECTION VIDEOS*/
+/* Sermons Section Styles */
+
+#sermons-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .sermon {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .sermon-card {
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .sermon-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sermon-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .sermon-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .sermon-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .sermon-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 767px) {
+    #sermons-section {
+      padding: 30px 0;
+    }
+  
+    .sermon-card {
+      padding: 15px;
+    }
+  
+    .sermon-title {
+      font-size: 16px;
+    }
+  
+    .sermon-description {
+      font-size: 12px;
+    }
+  }
+  
 
 
 /* KNOW US SECTION */

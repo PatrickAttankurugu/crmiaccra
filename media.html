@@ -3,52 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media - CRMI-Accra</title>
-    <!-- Link to your CSS, Bootstrap, and JavaScript files here -->
+    <title>CRMI-Accra - Media</title>
+    <meta name="description" content="Explore media resources at Christian Restoration Ministries International - Accra Branch. Join us in worship, community service, and more.">
+    <meta name="keywords" content="CRMI, Christian Restoration Ministries International, Church, Accra, Ghana, Religion, Christianity, Community, Media">
+    <meta name="author" content="Patrick Attankurugu">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/others.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
-   <!-- Navigation bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Brand/logo -->
-    <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" alt="CRMI-Accra logo" style="width:60px;">
-    </a>
-    <!-- Toggler/collapsible Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto"> <!-- Added ml-auto class here -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="ministries.html">Ministries</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="media.html">Media</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="give.html">Give</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="CRMI-Accra logo" style="width:60px;">
+        </a>
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="media.html">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="give.html">Give</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="media-hero-section" id="media-hero-section">
+        <div class="media-overlay" id="media-hero-overlay"></div>
+        <div class="media-hero-content" id="media-hero-content">
+            <h1 id="media-hero-title">Welcome to CRMI Media</h1>
+            <p id="media-hero-subtitle">Explore the latest sermons, podcasts, and media from CRMI Accra.</p>
+            <button class="media-btn-hero" id="media-hero-button">Explore Now</button>
+        </div>
+    </section>
+    
 
-    <!-- Page title -->
-    <header>
-        <h1>Media</h1>
-    </header>
 
     <!-- Sermons Section -->
     <section id="sermons">
@@ -57,27 +69,90 @@
         <!-- You can also include brief descriptions or quotes from each sermon. -->
     </section>
 
-    <!-- Podcasts Section -->
-    <section id="podcasts">
-        <h2>Podcasts</h2>
-        <!-- Similar to the sermons section, you can either embed your podcasts here or provide links to where they can be listened to. -->
-    </section>
-
-    <!-- Videos Section -->
-    <section id="videos">
-        <h2>Videos</h2>
-        <!-- You can embed videos directly from platforms like YouTube, Vimeo, etc. -->
-    </section>
-
-    <!-- Photo Galleries Section -->
-    <section id="photos">
-        <h2>Photo Galleries</h2>
-        <!-- You can display photos from different events or general church activities here. Remember to ensure you have the necessary permissions to publish these photos. -->
-    </section>
+    <!-- Sermons Section -->
+<section id="sermons-section">
+    <div class="container">
+      <div class="row">
+        <!-- Sermon 1 -->
+        <div class="col-lg-3 col-md-6 sermon">
+          <div class="sermon-card">
+            <a href="YOUR_FACEBOOK_LINK_1" target="_blank">
+              <img src="images/sermon1.jpg" alt="Sermon 1" class="sermon-thumbnail">
+              <h3 class="sermon-title">Sermon Title 1</h3>
+              <p class="sermon-description">Brief description of Sermon 1</p>
+            </a>
+          </div>
+        </div>
+        <!-- Sermon 2 -->
+        <div class="col-lg-3 col-md-6 sermon">
+          <div class="sermon-card">
+            <a href="YOUR_FACEBOOK_LINK_2" target="_blank">
+              <img src="images/sermon2.jpg" alt="Sermon 2" class="sermon-thumbnail">
+              <h3 class="sermon-title">Sermon Title 2</h3>
+              <p class="sermon-description">Brief description of Sermon 2</p>
+            </a>
+          </div>
+        </div>
+        <!-- Sermon 3 -->
+        <div class="col-lg-3 col-md-6 sermon">
+          <div class="sermon-card">
+            <a href="YOUR_FACEBOOK_LINK_3" target="_blank">
+              <img src="images/sermon3.jpg" alt="Sermon 3" class="sermon-thumbnail">
+              <h3 class="sermon-title">Sermon Title 3</h3>
+              <p class="sermon-description">Brief description of Sermon 3</p>
+            </a>
+          </div>
+        </div>
+        <!-- Sermon 4 -->
+        <div class="col-lg-3 col-md-6 sermon">
+          <div class="sermon-card">
+            <a href="YOUR_FACEBOOK_LINK_4" target="_blank">
+              <img src="images/sermon4.jpg" alt="Sermon 4" class="sermon-thumbnail">
+              <h3 class="sermon-title">Sermon Title 4</h3>
+              <p class="sermon-description">Brief description of Sermon 4</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
     <!-- Footer -->
-    <footer>
-        <!-- Footer content here -->
-    </footer>
+   <!-- Footer -->
+<footer class="mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <p>Pinacle Hyper Store<br> Mahama St. Near Tse Addo Round About<br> (+233) 01-234-5678</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Connect With Us</h5>
+                <div>
+                    <button class="btn-social-icon btn-facebook"><i class="fab fa-facebook-f"></i></button>
+                    <button class="btn-social-icon btn-twitter"><i class="fab fa-twitter"></i></button>
+                    <button class="btn-social-icon btn-instagram"><i class="fab fa-instagram"></i></button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Legal</h5>
+                <p><a href="#">Privacy Policy</a><br> <a href="#">Terms of Service</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Website Developed By</h5>
+                <p><a href="https://patrickattankurugu.github.io/">Patrick Attankurugu</a></p>
+                <p>+233545014267</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <p class="text-center">&copy; 2023 Christian Restoration Ministries International - Accra. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
