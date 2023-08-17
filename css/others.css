@@ -9,48 +9,42 @@ body {
 }
 
 /* Navigation Bar */
+/* Navigation Bar */
 .navbar {
-    background-color: #8B4513; /* Dark brown */
-    padding: 1rem 2rem; /* Padding around the navbar */
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Gives navbar a slight 3D effect */
+    background-color: #f8f9fa; /* Background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a sleek look */
 }
 
-.navbar-brand {
-    color: #F5F5DC; /* Beige */
-    font-size: 1.5rem; /* Larger font size */
-    transition: all 0.5s; /* Smooth transition for hover effect */
-}
-
-.navbar-brand:hover {
-    color: #C0C0C0
-}
-
-.navbar-toggler {
-    border-color: #F5F5DC; /* Beige */
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245, 245, 220, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Beige color for the toggler icon */
-}
-
-.navbar-nav {
-    text-align: center; /* Center the nav links on smaller screens */
-}
-
-.navbar-nav .nav-item {
-    flex-grow: 1; /* Nav items occupy equal space within the container */
+.navbar-brand img {
+    width: 60px; /* Adjust logo size */
 }
 
 .navbar-nav .nav-link {
-    color: #F5F5DC; /* Beige */
-    font-size: 1.1rem; /* Slightly larger font size */
-    transition: all 0.5s; /* Smooth transition for hover effect */
+    color: #3e1c00; /* Set custom color for links */
+    font-weight: bold; /* Make links bold */
+    margin: 0 15px; /* Add space between links */
 }
 
 .navbar-nav .nav-link:hover {
-    color: #C0C0C0;
-    background-color: #F5F5DC; /* Beige background on hover */
+    color: #555; /* Set color on hover */
 }
+
+.navbar-toggler {
+    border-color: #3e1c00; /* Set custom color for the toggle button */
+}
+
+.navbar-toggler-icon {
+    background-color: #3e1c00; /* Set custom color for the toggle icon */
+}
+
+/* Active Link Styling */
+.nav-item.active .nav-link {
+    color: #fff; /* Set custom color for the active link */
+    background-color: #3e1c00; /* Set custom background color for the active link */
+}
+
+
+
 
 
 /* Hero Image */
@@ -798,5 +792,226 @@ footer .developed-by a:hover {
         font-size: 0.7rem;
         text-align: center;
     }
+}
+
+
+/*EVENTS PAGE*/
+
+/* Hero Section */
+.events-hero-section {
+    position: relative;
+    background: url('../images/nothing\ without\ Jesus.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff; /* White text color */
+    height: 60vh; /* Adjust based on your design needs */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark overlay to enhance readability */
+.events-hero-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Hero text container */
+.events-hero-text {
+    position: relative; /* Places text above the overlay */
+    z-index: 2;
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Hero Title */
+.events-hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Hero Description */
+.events-hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/*events*/
+/* Weekly Events Section */
+.events-section {
+    background: linear-gradient(to right, #f0f4f5, #f9f9f9); /* Gradient background */
+    padding: 60px 0;
+    text-align: center;
+    color: #333;
+    position: relative; /* For pseudo-elements */
+}
+
+/* Section Title */
+.events-section h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+/* Individual Event Styling */
+.events-section .event {
+    background: #fff;
+    padding: 25px;
+    margin: 30px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* More pronounced rounded corners */
+    max-width: 650px;
+    transition: all 0.3s; /* Smooth hover effect */
+}
+
+.events-section .event:hover {
+    transform: translateY(-10px); /* Lifting effect on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+/* Event Titles */
+.events-section h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase; /* Capitalize the subtitles */
+}
+
+/* Event Details */
+.events-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Strong Tag to highlight times */
+.events-section strong {
+    color: #e44d26;
+    font-weight: bold; /* Bold for the times */
+}
+
+/* Address styling */
+.events-section address {
+    font-style: normal;
+    color: #555;
+    margin-top: 30px;
+    font-weight: 600; /* Slightly bold for better visibility */
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .events-section .event {
+        margin: 20px 5%;
+    }
+    .events-section h2 {
+        font-size: 2.2rem;
+    }
+    .events-section h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/*SPECIAL EVENTS*/
+/* Special Event: The Solutions */
+.special-event {
+    background: linear-gradient(45deg, #3e1c00, #3e1c00); /* Monochrome brown background */
+    color: #fff; /* White text */
+    padding: 60px 0;
+    text-align: center;
+    overflow: hidden; /* Required for pseudo-elements */
+    position: relative; /* Required for pseudo-elements */
+}
+
+.special-event::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Required for pseudo-elements */
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: repeating-linear-gradient(-45deg, transparent, transparent 50px, rgba(255, 255, 255, 0.1) 50px, rgba(255, 255, 255, 0.1) 100px); /* Diagonal pattern */
+    transform: translateX(-50%) rotate(15deg); /* Align center and rotate slightly */
+    z-index: 1; /* Appear below text */
+}
+
+.special-event * {
+    position: relative; /* Appear above background pattern */
+    z-index: 2;
+}
+
+/* Main Title */
+.special-event h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Capitalized text */
+}
+
+/* Event Description */
+.special-event p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.special-event strong {
+    font-weight: bold;
+    color: #fbd46d; /* Gold color for highlight */
+}
+
+/* Dates List */
+.special-event ul {
+    list-style-type: none; /* Remove bullets */
+    font-size: 1.2rem;
+    font-weight: 600; /* Slightly bold */
+}
+
+.special-event li {
+    margin-bottom: 10px;
+}
+
+/* Event Address */
+.special-event address {
+    font-style: normal; /* Override the default italic style */
+    font-size: 1.1rem;
+    font-weight: 600; /* Slightly bold */
+    color: #f0f8ff; /* Lighter color for contrast */
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .special-event h2 {
+        font-size: 2.5rem;
+    }
+    .special-event p, .special-event ul, .special-event address {
+        font-size: 1.1rem;
+    }
+}
+/* Call to Action Button */
+.special-event .cta-button {
+    display: inline-block;
+    background: #fbd46d; /* Gold background to match highlights */
+    color: #3e1c00; /* Brown text color to match background */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.special-event .cta-button:hover {
+    background: #f0f8ff; /* Lighter color on hover */
+    color: #3e1c00; /* Brown text on hover */
 }
 
