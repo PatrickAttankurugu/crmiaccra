@@ -9,39 +9,67 @@ body {
 }
 
 /* Navigation Bar */
-/* Navigation Bar */
+/* Fixed Navigation Bar */
 .navbar {
-    background-color: #f8f9fa; /* Background color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a sleek look */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar is above other content */
+    background-color: #3e1c00;
+    border-bottom: 2px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Navbar Brand/Logo */
+.navbar-brand {
+    color: #ffffff;
 }
 
 .navbar-brand img {
-    width: 60px; /* Adjust logo size */
+    height: 60px;
 }
 
-.navbar-nav .nav-link {
-    color: #3e1c00; /* Set custom color for links */
-    font-weight: bold; /* Make links bold */
-    margin: 0 15px; /* Add space between links */
-}
-
-.navbar-nav .nav-link:hover {
-    color: #555; /* Set color on hover */
-}
-
+/* Toggler Button */
 .navbar-toggler {
-    border-color: #3e1c00; /* Set custom color for the toggle button */
+    background-color: #ffffff;
 }
 
 .navbar-toggler-icon {
-    background-color: #3e1c00; /* Set custom color for the toggle icon */
+    background-color: #3e1c00;
 }
 
-/* Active Link Styling */
-.nav-item.active .nav-link {
-    color: #fff; /* Set custom color for the active link */
-    background-color: #3e1c00; /* Set custom background color for the active link */
+/* Links */
+.navbar-nav {
+    text-align: center;
 }
+
+.nav-item {
+    padding: 15px;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e6e6e6; /* Lighter color on hover */
+}
+
+/* Collapsible navbar styling for smaller screens */
+@media screen and (max-width: 992px) {
+    .navbar-nav .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-collapse {
+        background-color: #3e1c00; /* Ensuring the background matches in collapsed mode */
+    }
+}
+
 
 
 
