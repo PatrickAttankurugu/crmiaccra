@@ -165,6 +165,36 @@ body {
     }
 }
 
+
+/*HERO SECTION FOR CONTACT US PAGE*/
+#hero-section {
+    background: url('../images/contact.jpg') no-repeat center center; /* Replace with your background image URL */
+    background-size: cover;
+    height: 80vh; /* Adjust height as needed */
+    color: #ffffff; /* Text color */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-section .hero-content {
+    max-width: 800px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #F8F8F8; /* You can adjust the background color as needed */
+}
+
+#hero-section h1 {
+    font-size: 3rem; /* Adjust font size as needed */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#hero-section p {
+    font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+
 /*WHY GIVE*/
 .page-header {
     display: flex;
@@ -211,6 +241,7 @@ body {
         text-align: center;
     }
 }
+
 
 /*why give*/
 #why-give.give-section {
