@@ -49,6 +49,11 @@
 .nav-link:hover {
     color: #e6e6e6; /* Lighter color on hover */
 }
+.nav-item.active .nav-link {
+    color: #2980b9;
+    font-weight: bold;
+}
+
 
 /* Collapsible navbar styling for smaller screens */
 @media screen and (max-width: 992px) {
