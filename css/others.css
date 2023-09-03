@@ -771,6 +771,10 @@ body {
 #pastor .btn:hover {
     background: #444;
 }
+.pastor-image img.hovered {
+    transform: scale(1.1); /* Scale up the image */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -790,6 +794,103 @@ body {
 }
 
 
+/* STAFF SECTION*/
+/* Staff Section Styles */
+#staff-section {
+    background-color: #fff;
+    padding: 3em 1em;
+    text-align: center;
+  }
+  
+  #staff-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Staff Container Styles */
+  .staff-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Staff Member Styles */
+  .staff-member {
+    background-color: #f9f9f9;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 1em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    flex-basis: 100%;  /* Make them take the full width on mobile */
+  }
+  
+  .staff-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1em;
+  }
+  
+  .staff-member h3, .staff-member p {
+    margin-bottom: 1em;
+    color: #333;
+  }
+  
+  .staff-member a {
+    color: #1877f2;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .staff-member:hover {
+    background-color: #e9e9e9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .staff-member:hover a {
+    color: #155a8a;
+  }
+
+  /* Hover Effects for Staff */
+.staff-member.hovered {
+    background-color: #e0e0e0;  /* Change background color when hovered */
+    transform: scale(1.02);  /* Scale up a bit to highlight */
+    transition: all 0.3s ease-in-out;  /* Smooth transition */
+  }
+  
+  .staff-member.selected {
+    background-color: #d0d0d0;  /* Change background color when selected */
+    transform: scale(1.05);  /* Scale up a bit to highlight */
+    transition: all 0.3s ease-in-out;  /* Smooth transition */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (min-width: 768px) {
+    .staff-container {
+      flex-wrap: wrap;
+    }
+  
+    .staff-member {
+      flex-basis: calc(50% - 2em);  /* Two staff members in a row */
+    }
+  
+    /* For first two staff */
+    #rev-ebenezer, #pastor-dotse {
+      order: -1;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .staff-member {
+      flex-basis: calc(50% - 2em); /* Keeps the two in the first row and the rest below */
+    }
+  }
 /* COME SEE US SECTION */
 #come-see-us {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/visit-us.jpg') no-repeat center center;
