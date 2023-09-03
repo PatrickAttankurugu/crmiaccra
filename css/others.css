@@ -1,12 +1,4 @@
-/* Style for the entire about page */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    padding: 0;
-    margin: 0;
-    background-color: #f5f5f5;
-}
+
 
 /* Navigation Bar */
 /* Fixed Navigation Bar */
@@ -15,7 +7,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000; /* Ensures the navbar is above other content */
-    background-color: #3f2611;
+    background-color: #3e1c00;
     border-bottom: 2px solid #ffffff;
     transition: all 0.3s ease;
 }
@@ -71,8 +63,15 @@ body {
 }
 
 
-
-
+/* Style for the entire about page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
 
 
 /* Hero Image */
