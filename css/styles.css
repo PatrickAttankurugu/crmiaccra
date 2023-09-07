@@ -281,7 +281,7 @@
 
 
 #upcoming-events {
-    background: url('../images/jesus.jpg') no-repeat center center fixed; 
+    background-color: #3e1c00;
     background-size: cover;
     position: relative;
     height: 800px;
