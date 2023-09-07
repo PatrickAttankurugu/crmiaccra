@@ -316,63 +316,88 @@
 
 
 
-/* Upcoming Events Section */
+/* Upcoming Events Section - Base and Mobile Styles */
 #upcoming-events {
     background-color: #3e1c00;
-    color: #ffffff;
-    padding: 2rem 0;
-    text-align: center;
+    padding: 2rem; /* Padding for the section */
+    color: white;
 }
 
 #upcoming-events h2 {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#upcoming-events .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#upcoming-events .row {
+    width: 100%;
+}
+
+#upcoming-events .col-md-4 {
     margin-bottom: 1rem;
 }
 
-.events-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
+.event {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight white background */
+    border-radius: 10px; /* Rounded corners */
+    margin: 0.5rem; /* Margin around each card */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 
-.event-card {
-    flex: 0 0 calc(33.333% - 2rem);
-    max-width: calc(33.333% - 2rem);
-    border-radius: 1rem;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+.event:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
-.event-card:hover {
-    transform: scale(1.05);
-}
-
-.card-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.card-details {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+.event .card-body {
     padding: 1rem;
-    text-align: left;
+    color: white;
+}
+/* Card Text */
+.event .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    .events-grid {
-        flex-direction: column;
-    }
+.event .card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    color:#d7d2ce;
+}
 
-    .event-card {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 1rem;
+/* Tablet and up */
+@media (min-width: 768px) {
+    #upcoming-events {
+        padding: 3rem; /* Increases padding for larger screens */
+    }
+    #upcoming-events h2 {
+        font-size: 2.5rem; /* Increases heading size */
+    }
+    #upcoming-events .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #upcoming-events .col-md-4 {
+        width: calc(33.333% - 1rem); /* Three cards in a row, accounting for margins */
     }
 }
+
+/* Desktop and up */
+@media (min-width: 992px) {
+    #upcoming-events .col-md-4 {
+        width: calc(25% - 1rem); /* Four cards in a row, accounting for margins */
+    }
+}
+
 
 
 
