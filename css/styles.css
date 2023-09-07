@@ -209,134 +209,155 @@
 
 
 
-/* CTA Section */
-#cta {
-    background-color: #A9A9A9;
-    padding: 2rem 1rem; /* Padding for the section */
+/* Inspiration Section */
+#inspiration {
+    background-color: #f9f9f9;  /* Light gray background */
+    padding: 2rem 1rem;  /* Padding for the section */
+    text-align: center;  /* Center text for small screens */
 }
 
-.teaching-container {
-    display: flex; /* Flex layout for the two halves */
-    flex-direction: row-reverse; /* Reverses the order of the flex items */
-    align-items: center; /* Vertically center aligns the items */
-    gap: 2rem; /* Space between the two halves */
+.inspiration-container {
+    display: flex;  /* Flex layout for the two halves */
+    flex-direction: column;  /* Stack items vertically for small screens */
+    align-items: center;  /* Center items vertically */
+    gap: 2rem;  /* Gap between the text and the image */
 }
 
-/* For screens smaller than 768px, stack the items vertically */
-@media (max-width: 767px) {
-    .teaching-container {
-        flex-direction: column; /* Stacks the flex items vertically */
-    }
+.message {
+    flex: 1;  /* Allow the text to take up all available space */
+    padding: 1rem;  /* Padding around the text */
 }
 
-.preaching-poster {
-    flex: 1; /* Each half takes up an equal width */
-    max-width: 600px; /* Maximum width for the image */
-    margin: 0 auto; /* Auto margins for horizontal centering */
+.message h3 {
+    font-size: 1.8rem;  /* Increase the font size */
+    margin-bottom: 0.5rem;  /* Margin between the heading and the text */
+    color: #8B4513;  /* Use a pleasant blue */
+    text-transform: uppercase;  /* Make the text uppercase */
+    transition: all 0.3s ease;
+
 }
 
-.preaching-poster img {
-    width: 100%; /* Image takes up full width of its container */
-    height: auto; /* Height auto to maintain aspect ratio */
-    object-fit: cover; /* Ensures image covers the entire area */
-    border-radius: 0.5rem; /* Rounded corners for the image */
+.message p {
+    font-size: 1rem;  /* Font size for the paragraph */
+    margin-bottom: 1rem;  /* Margin at the bottom */
+    color: #333;  /* Dark gray color for the text */
+    line-height: 1.6;  /* Better line height */
+    transition: all 0.3s ease;
+
 }
 
-.preaching-details {
-    flex: 1; /* Each half takes up an equal width */
-    padding: 1rem; /* Padding around the text */
-}
-
-.preaching-details h3, .preaching-details h4 {
-    margin-bottom: 0.5rem; /* Space between the headings and paragraphs */
-    color: #8B4513; /* Dark brown color for the text */
-}
-
-.preaching-details p {
-    margin-bottom: 1rem; /* Space between paragraphs */
-    color: #333; /* Dark grey color for the text */
-}
-
-/* CTA Button */
 .cta-btn {
-    display: inline-block;
-    color: #fff;
-    background-color: #8B4513; /* Dark brown background */
-    padding: 15px 30px;
-    margin-top: 10px;
-    margin-right: 10px;
-    font-size: 1.2rem;
-    text-transform: uppercase; /* Transforms the text to uppercase */
-    letter-spacing: 1px; /* Adds some spacing between the letters */
-    border: none;
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+    background-color: #8B4513;  /* Button color */
+    color: #fff;  /* Text color */
+    padding: 12px 24px;  /* Padding */
+    border: none;  /* No border */
+    border-radius: 4px;  /* Rounded corners */
+    font-size: 1rem;  /* Font size */
+    cursor: pointer;  /* Hand cursor */
+    transition: background-color 0.3s ease;  /* Transition */
 }
 
 .cta-btn:hover {
-    background-color: #A52A2A; /* Slightly darker brown for hover effect */
-    color: #fff;
-    text-decoration: none; /* Removes underline from link on hover */
+    background-color: #2e363e;  /* Darker blue for hover */
 }
 
-.video-container {
-    display: none;
-    width: 100%;
-    max-width: 560px;
-    margin: 1rem auto;
-  }
-  
-  /* Update existing cta-btn styles */
-  .cta-btn:hover {
-    cursor: pointer;
-  }
-  
-  @media (min-width: 768px) {
-    .video-container {
-      max-width: 560px;
+.inspiration-poster {
+    flex: 1;  /* Allow the image to take up all available space */
+    max-width: 400px;  /* Maximum width for the image */
+    margin: 0 auto;  /* Auto margins for centering */
+}
+
+.inspiration-poster img {
+    width: 100%;  /* Full width */
+    height: auto;  /* Auto height */
+    object-fit: cover;  /* Cover the container */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Simple box shadow */
+}
+
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+    .inspiration-container {
+        flex-direction: row;  /* Horizontal layout */
+        justify-content: space-between;  /* Space between items */
+        align-items: flex-start;  /* Align items to the start */
     }
-  }
+
+    .message {
+        text-align: left;  /* Align text to the left */
+    }
+
+    .message h3 {
+        font-size: 2rem;  /* Increase the font size */
+    }
+
+    .message p {
+        font-size: 1.2rem;  /* Increase the font size */
+    }
+
+    .inspiration-poster {
+        max-width: 600px;  /* Increase the maximum width */
+    }
+}
 
 
 
+/* Upcoming Events Section */
 #upcoming-events {
     background-color: #3e1c00;
-    background-size: cover;
-    position: relative;
-    height: 800px;
-    padding-top: 150px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
 }
 
-#upcoming-events:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
+#upcoming-events h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-#upcoming-events .container {
-    position: relative;
-    z-index: 2;
+.events-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
 }
 
-.event {
-    opacity: 0.8;
+.event-card {
+    flex: 0 0 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
 
-.event:hover {
-    opacity: 1;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+.event-card:hover {
     transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
 }
 
-.event .card-body {
-    color: black;
+.card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-details {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .events-grid {
+        flex-direction: column;
+    }
+
+    .event-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
 }
 
 

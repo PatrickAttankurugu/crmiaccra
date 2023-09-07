@@ -29,6 +29,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
         <!-- Custom JS -->
         <script src="js/scripts.js"></script>
+        <script src="js/try.js"></script>
+
     </head>
 <body>
    <!-- Navigation bar -->
@@ -124,30 +126,25 @@
     <div class="container">
         <h2>Welcome to Christian Restoration Ministries International, Accra!</h2>
         <p>We are a congregation committed to being disciples of Jesus, dedicated to bringing light to the world. Here, we welcome everyone, from every walk of life. Whether you seek answers, need solace, celebrate life, or desire to understand Jesus better, you've found your spiritual home. We rejoice in our differences, learn from our hardships, and grow closer to Jesus through His teachings. No matter who you are, no matter where you find yourself in life, we have a place for you.</p>
-        <a href="about.html" class="btn btn-primary mt-3">Discover More</a>
+        <a href="#inspiration" class="btn btn-primary mt-3">Discover More</a>
     </div>
 </section>
 
 
-<section id="cta" class="container mt-4">
-    <div class="teaching-container">
-        <div class="preaching-poster">
-            <img src="images/bishop.jpg" alt="Latest Preaching Poster">
+<section id="inspiration" class="container mt-4">
+    <div class="inspiration-container">
+        <div class="message" id="messageBox">
+            <h3 id="headerText">Join Us on a Journey</h3>
+            <p id="mainText">We invite you to be a part of a community where we celebrate faith, embrace love, and share the teachings of Jesus Christ.</p>
+            <button class="cta-btn" id="ctaButton">Learn More</button>
         </div>
-        <div class="preaching-details">
-            <h3>LATEST TEACHING</h3>
-            <p>JULY 30, 2023</p>
-            <h4>Two Prayers for Two Brothers</h4>
-            <p>Aps.Dr.Emmanuel Eyim-Danquah | July 30, 2023</p>
-            <!-- Action Buttons -->
-            <button class="cta-btn" id="watchNowButton">Watch Now</button>
-            <button class="cta-btn">Download Sermon</button>
+        <div class="inspiration-poster" onmouseover="changeContent()" onmouseout="resetContent()">
+            <img src="images/bishop.jpg" alt="Bishop" id="inspirationImage">
         </div>
-    </div>
-    <div class="video-container" id="videoContainer">
-        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2Fcrmiaccra%2Fvideos%2F223336220674218%2F&show_text=false&width=560&t=0" width="100%" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
     </div>
 </section>
+
+
 
     
 
