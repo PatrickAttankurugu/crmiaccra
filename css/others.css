@@ -81,38 +81,15 @@ body {
 
 /* Hero Image */
 #hero-image {
-    background: url('../images/welcome.jpg') no-repeat center center/cover;
-    height: 100vh;
     position: relative;
-}
-
-#hero-image .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-}
-
-#hero-image .hero-text h1 {
-    font-size: 4rem;
-    font-weight: 800;
-    letter-spacing: 1.2px;
-}
-
-/* Hero Image */
-/* Base styling for mobile */
-#hero-image {
-    position: relative;
-    background: url('../images/welcome.jpg') no-repeat center center/cover;
+    background: url("../images/nothing\ without\ Jesus.jpg") no-repeat center center;
+    background-size: cover;
     height: 100vh;
-    overflow: hidden;
+    color: #ffffff;
 }
 
-#hero-image .overlay {
+/* Overlay */
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -122,64 +99,70 @@ body {
     z-index: 1;
 }
 
-#hero-image .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
+/* Hero Text */
+.hero-text {
+    position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-#hero-image .animated-text {
-    font-size: 2rem;
-    font-weight: 800;
-    letter-spacing: 1.2px;
-    transition: all 0.3s ease-in-out;
+/* Animated Text */
+.animated-text {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideInRight 1s ease-in-out;
 }
 
-#hero-image .subtext {
-    font-size: 1rem;
+/* Subtext */
+.subtext {
+    font-size: 1.2rem;
     margin-top: 1rem;
 }
 
-#hero-image .cta-button {
-    margin-top: 1.5rem;
+/* Mission Button */
+#mission-button {
+    margin-top: 2rem;
     padding: 10px 20px;
+    background-color: #f1c40f;
     border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
     transition: background-color 0.3s ease;
 }
 
-#hero-image .cta-button:hover {
-    background-color: #0056b3;
+#mission-button:hover {
+    background-color: #f39c12;
 }
 
-/* Styling for tablets and above */
+/* Keyframe for slideInRight */
+@keyframes slideInRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* For screens larger than 768px */
 @media (min-width: 768px) {
-    #hero-image .animated-text {
-        font-size: 3rem;
-    }
-    #hero-image .subtext {
-        font-size: 1.2rem;
-    }
-}
-
-/* Styling for desktops and above */
-@media (min-width: 1024px) {
-    #hero-image .animated-text {
+    .animated-text {
         font-size: 4rem;
     }
-    #hero-image .subtext {
+
+    .subtext {
+        font-size: 1.5rem;
+    }
+
+    #mission-button {
         font-size: 1.5rem;
     }
 }
-
 
 
 /*HERO SECTION FOR GIVE PAGE*/
@@ -709,32 +692,44 @@ body {
     }
 }
 
-/* Mission Section */
+/* MISSION SECTION*/
 #mission {
-    background: #5A3510; 
-    color: #fff; 
-    padding: 80px 0; 
-    margin:20px;
-    text-align: center; 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.5s ease;
-}
-
-#mission:hover {
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
-}
-
-#mission h2 {
-    font-size: 2.5em; 
-    font-weight: 700; 
-    margin-bottom: 20px; 
-}
-
-#mission p {
-    font-size: 1.2em; 
-    max-width: 800px; 
-    margin: 0 auto; 
-}
+    background-color: #6c6666;  /* light gray background */
+    padding: 3rem 0;            /* top and bottom padding */
+    text-align: center;         /* align text to the center */
+    position: relative;         /* set position for potential child elements */
+  }
+  
+  #mission h2 {
+    font-size: 2.5rem;           /* large font size for the heading */
+    color: #333;                /* dark text */
+    margin-bottom: 1.5rem;      /* space below the heading */
+  }
+  
+  #mission p {
+    font-size: 1.2rem;           /* readable font size for the paragraph */
+    color: #555;                /* slightly dark text */
+    max-width: 800px;           /* maximum width of the text */
+    margin: 0 auto;             /* center the text block */
+    line-height: 1.6;           /* line height for better readability */
+  }
+  
+  /* For larger screens */
+  @media screen and (min-width: 768px) {
+    #mission {
+      background-color: #f4f4f4;  /* light gray background */
+      padding: 5rem 0;            /* increased top and bottom padding */
+    }
+  
+    #mission h2 {
+      font-size: 3rem;           /* even larger font size for the heading */
+    }
+  
+    #mission p {
+      font-size: 1.4rem;         /* larger font size for the paragraph */
+    }
+  }
+  
 
 /* Vision Section */
 #vision {
