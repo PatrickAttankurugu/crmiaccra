@@ -274,6 +274,20 @@
     border-radius: 8px;  /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Simple box shadow */
 }
+/* Mobile styles */
+@media (max-width: 768px) {
+    .events-grid {
+        flex-direction: column;
+        align-items: center; /* Centers the cards */
+    }
+
+    .event-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
 
 /* For screens larger than 768px */
 @media (min-width: 768px) {
@@ -361,31 +375,51 @@
 }
 
 
-/* Google Maps */
+/* Google Maps Section - Base and Mobile Styles */
 #location {
+    background-color: #f1f1f1; /* Light grey background */
+    padding: 2rem 1rem; /* Padding for the section */
+    text-align: center; /* Center aligns the text */
+}
+
+#location h2 {
+    margin-bottom: 1rem; /* Margin below the heading */
+    font-size: 2rem; /* Font size of the heading */
+    color: #333; /* Dark grey color for the text */
+}
+
+.map {
     position: relative;
-    background: #f4f4f4;
-    text-align: center;
+    overflow: hidden; /* Hide any overflow */
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
 }
 
-#location .map {
-    width: 100%;
-    height: 450px;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-#location .map:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-#location iframe {
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    border: none;
+    border: 0; /* Removes iframe border */
 }
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    #location {
+        padding: 3rem 2rem; /* Increases padding for bigger screens */
+    }
+    #location h2 {
+        font-size: 2.5rem; /* Increases font size for bigger screens */
+    }
+}
+
+/* Desktop and up */
+@media (min-width: 992px) {
+    .map {
+        padding-bottom: 50%; /* Adjusts the aspect ratio */
+    }
+}
+
 
 /* Find Your Place Section */
 #find-place {
