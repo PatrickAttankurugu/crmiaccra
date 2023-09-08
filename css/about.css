@@ -5,69 +5,24 @@
     box-sizing: border-box;
 }
 
-/* General body styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(to right, #f4f4f4, #fff);
-    transition: background 0.5s ease-in-out;
+/* General Styling */
+.container h2 {
+    color: #C0C0C0;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-/* Favicon styles */
-link[rel="icon"] {
-    width: 16px;
-    height: 16px;
+.container p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333; /* dark grey */
 }
 
-/* General link styles */
-a {
+.container a {
+    color: #C0C0C0;
+}
+
+.container a:hover {
+    color: #C0C0C0;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-/* Nav Bar */
-.navbar {
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand img {
-    width: 60px;
-    transition: all 0.3s ease;
-}
-
-.navbar-brand img:hover {
-    transform: scale(1.1);
-}
-
-.navbar-nav {
-    margin-right: 2rem;
-}
-
-.nav-link {
-    padding: 0.7rem 1.2rem;
-    color: #333;
-    transition: background 0.3s ease;
-}
-
-.nav-item.active .nav-link,
-.nav-link:hover {
-    color: #fff;
-    background: #007bff;
-    border-radius: 12px;
-}
-
-/* Adds a fancy underline on hover */
-.nav-link::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #007bff;
-    transition: width .3s;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-    transition: width .3s;
 }
