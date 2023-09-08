@@ -1,71 +1,72 @@
 
 
-/* Navigation Bar */
 /* Fixed Navigation Bar */
-.navbar {
+.navbar-custom {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensures the navbar is above other content */
+    z-index: 1000;
     background-color: #3e1c00;
     border-bottom: 2px solid #ffffff;
     transition: all 0.3s ease;
-}
-
-/* Navbar Brand/Logo */
-.navbar-brand {
+  }
+  
+  /* Navbar Brand/Logo */
+  .navbar-brand {
     color: #ffffff;
-}
-
-.navbar-brand img {
-    height: 60px;
-}
-
-/* Toggler Button */
-.navbar-toggler {
+  }
+  
+  .logo {
+    max-width: 60px;
+  }
+  
+  /* Toggler Button */
+  .navbar-toggler {
     background-color: #ffffff;
-}
-
-.navbar-toggler-icon {
+  }
+  
+  .navbar-toggler-icon {
     background-color: #3e1c00;
-}
-
-/* Links */
-.navbar-nav {
+  }
+  
+  /* Links */
+  .navbar-nav {
     text-align: center;
-}
-
-.nav-item {
-    padding: 15px;
-}
-
-.nav-link {
+  }
+  
+  .nav-item {
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-link {
     color: #ffffff;
     font-size: 1.1rem;
     font-weight: 600;
     transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #e6e6e6; /* Lighter color on hover */
-}
-.nav-item.active .nav-link {
+  }
+  
+  .nav-link:hover {
+    color: #e6e6e6;
+  }
+  
+  .nav-item.active .nav-link {
     color: #2980b9;
     font-weight: bold;
-}
-
-
-/* Collapsible navbar styling for smaller screens */
-@media screen and (max-width: 992px) {
+  }
+  
+  @media (max-width: 768px) {
     .navbar-nav .nav-link {
-        padding-left: 0;
-        padding-right: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
-
     .navbar-collapse {
-        background-color: #3e1c00; /* Ensuring the background matches in collapsed mode */
+      background-color: #3e1c00;
     }
-}
+    .nav-item {
+      padding: 0.5rem 0;
+    }
+  }
+  
 
 
 /* Style for the entire about page */
